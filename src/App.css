@@ -7,6 +7,7 @@
   box-sizing: border-box;
 }
 
+
 :root {
   --font-roboto: "Roboto Slab", serif;
   --font-raleway: "Raleway", sans-serif;
@@ -24,6 +25,20 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.navbar {
+  background: #f9d3b4;
+  padding: 3.5%;
+  display: flex;
+  align-items: left;
+  justify-content:left;
+  flex-direction: row;
+  opacity: 4;
+}
+
+.burger {
+  color: #212426
 }
 
 h1 {

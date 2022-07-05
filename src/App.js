@@ -4,6 +4,8 @@ import { useEffect } from "react";
 import "./App.css";
 import SearchIcon from "./search.svg";
 import MovieCard from "./MovieCard";
+import Navbar from "./Navbar/Navbar";
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
 const API_URL = "http://www.omdbapi.com?apikey=c3c6c283";
 
@@ -23,7 +25,16 @@ const App = () => {
   }, []);
 
   return (
+    <>
+    <Router>  
+        <Navbar className = "navbar"/>
+        <Routes>
+          <Route path='/'/>
+        </Routes>
+      </Router>
+
     <div className="app">
+      
       <h1>MovieLand</h1>
 
       <div className="search">
@@ -50,6 +61,7 @@ const App = () => {
         </div>
       )}
     </div>
+    </>
   );
 };
 
