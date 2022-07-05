@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import "./App.css";
 import SearchIcon from "./search.svg";
 import MovieCard from "./MovieCard";
+// Just for the git
 
 const API_URL = "http://www.omdbapi.com?apikey=c3c6c283";
 
