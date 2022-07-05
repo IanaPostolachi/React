@@ -4,8 +4,6 @@ import { useEffect } from "react";
 import "./App.css";
 import SearchIcon from "./search.svg";
 import MovieCard from "./MovieCard";
-// Just for the git
-// Another comment to chenk if I can push
 
 const API_URL = "http://www.omdbapi.com?apikey=c3c6c283";
 
@@ -21,7 +19,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    searchMovies();
+    alert('No movies to display \t shearch for a movie ')
   }, []);
 
   return (
