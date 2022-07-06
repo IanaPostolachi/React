@@ -6,6 +6,8 @@ import SearchIcon from "./search.svg";
 import MovieCard from "./MovieCard";
 import Navbar from "./Navbar/Navbar";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import Movies from './Pages/Movie'
+import Users from './Pages/User'
 
 const API_URL = "http://www.omdbapi.com?apikey=c3c6c283";
 
@@ -21,18 +23,19 @@ const App = () => {
   };
 
   useEffect(() => {
-    alert('No movies to display \t shearch for a movie ')
+    // alert('No movies to display \t shearch for a movie ')
   }, []);
 
   return (
     <>
     <Router>  
-        <Navbar className = "navbar"/>
+        <Navbar/>
         <Routes>
-          <Route path='/'/>
+          <Route path='/' exact component={App}/>
+          <Route path='/movies' exact component={Movies}/>
+          <Route path='/users' exact component={Users}/>
         </Routes>
       </Router>
-
     <div className="app">
       
       <h1>MovieLand</h1>

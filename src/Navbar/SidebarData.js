@@ -1,8 +1,7 @@
 import React from 'react';
-import * as FaIcons from 'react-icons/fa';
+// import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
-import * as AiOutlineIcons from 'react-icons/AiOutline';
-import * as IoIcons from 'react-icons/io';
+// import * as IoIcons from 'react-icons/io';
 import * as BiIcons from 'react-icons/bi';
 
 
@@ -22,7 +21,7 @@ export const SidebarData = [
     {
         title: 'Users',
         path: '/users',
-        icon: <AiOtline.AiOutlineUser/>,
+        icon: <BiIcons.BiUser/>,
         cName: 'nav-text'
     }
 ]
