@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 
 // import "./App.css";
-
+ 
 import Navbar from "./Navbar/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Movies from "./Pages/Movies";
