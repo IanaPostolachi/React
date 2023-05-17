@@ -4,7 +4,7 @@ import MovieCard from "./MovieCard";
 import "./Movies.css";
 import SelectedMovie from "./SelectedMovie";
 
-const API_URL = "http://www.omdbapi.com?apikey=c3c6c283";
+const API_URL = "http://www.omdbapi.com/?i=tt3896198&apikey=23f82ece";
 
 const MovieComponent = () => {
   const [movies, setMovies] = useState([]);
@@ -45,7 +45,6 @@ const MovieComponent = () => {
                   setMovieClicked(true);
                 }}
               >
-
                 {movieClicked ? (
                   <SelectedMovie
                     // className="selectedMovie"
